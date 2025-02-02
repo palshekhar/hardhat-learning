@@ -46,7 +46,7 @@ describe("token contract",function(){
 
          it("should fail if sender does not have enough tokens",async function() {
            const initialbalanceowner = await hardhattoken.showbalance(owner.address);
-           await expect(hardhattoken.connect(add1).transfer(owner.address,1)).to.be.revertedWith("Not enough token");
+           await expect(hardhattoken.connect(add1).transfer(owner.address,1)).to.be.revertedWith("Not Sufficient token");
            expect (await hardhattoken.showbalance(owner.address)).to.equal(initialbalanceowner);
           
          })
