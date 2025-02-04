@@ -41,7 +41,7 @@ describe("token contract",function(){
 
             await hardhattoken.connect(add1).transfer(add2.address,5);
             const add2balance = await hardhattoken.showbalance(add2.address);
-            expect(add2balance.toString()).to.equal("5");
+            expect(add2balance).to.equal(5);
          })
 
          it("should fail if sender does not have enough tokens",async function() {
