@@ -37,9 +37,46 @@
       ]
     },
     "C:\\Users\\DELL\\OneDrive\\Desktop\\hardhat_trail\\hardhat-learning\\contracts\\token.sol": {
-      "lastModificationDate": 1738496093812,
-      "contentHash": "372a0a6c3549a47a0c1c96dc85890354",
+      "lastModificationDate": 1738691670952,
+      "contentHash": "6a21833e40071a1f5fbaa13bc30ebb9a",
       "sourceName": "contracts/token.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.0"
+      ],
+      "artifacts": [
+        "token"
+      ]
+    },
+    "C:\\Users\\DELL\\OneDrive\\Desktop\\hardhat_trail\\hardhat-learning\\node_modules\\hardhat\\console.sol": {
+      "lastModificationDate": 1738496106994,
+      "contentHash": "178d0fdb8d813b0290d52e83f8793caa",
+      "sourceName": "hardhat/console.sol",
       "solcConfig": {
         "version": "0.8.9",
         "settings": {
@@ -65,10 +102,10 @@
       },
       "imports": [],
       "versionPragmas": [
-        ">=0.7.0"
+        ">=0.4.22 <0.9.0"
       ],
       "artifacts": [
-        "token"
+        "console"
       ]
     }
   }

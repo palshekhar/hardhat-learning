@@ -18,7 +18,8 @@ contract token {
   }
   
   function transfer(address to,uint amount)  external {
-     console.log("***Sender balance from ");
+     console.log("***Sender balance is %s",balances[msg.sender]);
+     console.log("***Sender is sending %s balance from %s address",balances[msg.sender],msg.sender);
      require(balances[msg.sender]>=amount,"Not Sufficient token");
      balances[msg.sender]-=amount;
      balances[to]+=amount;
