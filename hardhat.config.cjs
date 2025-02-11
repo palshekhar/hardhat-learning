@@ -15,8 +15,7 @@ module.exports = {
     sepolia: {
       url: `https://sepolia.infura.io/v3/${api}`,
       accounts: [`${privatekey}`],
-      
-    }
+      }
   }
 
 };

@@ -9,7 +9,7 @@ async function main() {
    console.log("💰 Sepolia Balance:", ethers.formatEther(balance), "ETH");
 
    // Deploy the contract
-   const Token = await ethers.getContractFactory("token"); // Replace with your contract name
+   const Token = await ethers.getContractFactory("token"); 
    const token = await Token.deploy();
 
    await token.waitForDeployment();
